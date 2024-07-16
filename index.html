@@ -27,6 +27,30 @@
         </div>
         <div class="promo__img"></div>
       </section>
+      <div class="popup">
+        <button class="popup__close"></button>
+        <p class="popup__title">Войти в систему</p>
+        <input
+          class="popup__input popup__input--login"
+          type="text"
+          placeholder="Email/Телефон"
+          required
+        />
+        <input
+          class="popup__input popup__input--password"
+          type="password"
+          placeholder="Пароль"
+          required
+        />
+        <div class="popup__save-password-wrapper">
+          <input class="popup__save-password-checkbox" type="checkbox" />
+          <span class="popup__save-password">Запомнить пароль</span>
+        </div>
+        <a href="#" class="popup__restore-password">Восстановить</a>
+        <button class="popup__button-open">Войти</button>
+        <button class="popup__button-registration">Зарегестрироваться</button>
+      </div>
     </main>
+		<div class="overlay"></div>
   </body>
 </html>
