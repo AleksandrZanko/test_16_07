@@ -27,30 +27,41 @@
         </div>
         <div class="promo__img"></div>
       </section>
-      <div class="popup">
-        <button class="popup__close"></button>
+      <form class="popup">
+        <button class="popup__close-button" type="button"></button>
         <p class="popup__title">Войти в систему</p>
         <input
           class="popup__input popup__input--login"
           type="text"
+          name="login"
           placeholder="Email/Телефон"
           required
         />
         <input
           class="popup__input popup__input--password"
           type="password"
+          name="password"
           placeholder="Пароль"
           required
         />
         <div class="popup__save-password-wrapper">
-          <input class="popup__save-password-checkbox" type="checkbox" />
-          <span class="popup__save-password">Запомнить пароль</span>
+          <input
+            id="save-password-checkbox"
+            class="popup__save-password-checkbox"
+            type="checkbox"
+          />
+          <label for="save-password-checkbox" class="popup__save-password"
+            >Запомнить пароль</label
+          >
         </div>
         <a href="#" class="popup__restore-password">Восстановить</a>
-        <button class="popup__button-open">Войти</button>
-        <button class="popup__button-registration">Зарегестрироваться</button>
-      </div>
+        <button class="popup__button-open" type="submit">Войти</button>
+        <button class="popup__button-registration" disabled>
+          Зарегестрироваться
+        </button>
+      </form>
     </main>
-		<div class="overlay"></div>
+    <div class="overlay"></div>
+    <script src="./main.js"></script>
   </body>
 </html>
