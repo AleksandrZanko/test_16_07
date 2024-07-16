@@ -1,2 +1,2 @@
 # test_16_07
-Test task for Veb Kibernetick
+Test task for Web Kibernetick
